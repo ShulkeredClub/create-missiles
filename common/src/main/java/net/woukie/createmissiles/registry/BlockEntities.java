@@ -1,7 +1,5 @@
 package net.woukie.createmissiles.registry;
 
-import com.simibubi.create.AllPartialModels;
-import com.simibubi.create.content.kinetics.base.SingleAxisRotatingVisual;
 import com.simibubi.create.foundation.data.CreateRegistrate;
 import com.tterrag.registrate.util.entry.BlockEntityEntry;
 import net.woukie.createmissiles.CreateMissiles;
@@ -15,7 +13,6 @@ public class BlockEntities {
 
     public static final BlockEntityEntry<LaunchPadBlockEntity> LAUNCH_PAD = REGISTRATE
             .blockEntity("launch_pad", LaunchPadBlockEntity::new)
-            .visual(() -> SingleAxisRotatingVisual.of(AllPartialModels.SHAFTLESS_COGWHEEL))
             .validBlock(Blocks.LAUNCH_PAD)
             .register();
 
